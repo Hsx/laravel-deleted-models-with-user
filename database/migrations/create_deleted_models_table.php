@@ -12,6 +12,8 @@ return new class extends Migration
             $table->id();
 
             $table->string('key', 40);
+            $table->string('user_uuid', 36);
+            $table->string('user_name', 150);
             $table->string('model');
             $table->json('values');
 
